@@ -319,3 +319,12 @@ ul.guessBox li {
 	margin: 0.2em;
 	color: #fff;
 }
+
+
+/*** Hidden ***/
+.hidden {
+	display: none;
+}
+#new {
+	cursor: pointer;
+}
