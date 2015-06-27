@@ -23,8 +23,9 @@ console.log(rightNum)
 // function newGame ();
 
 $('#new').on('click', function(){
-  random = Math.random() * 100;
-  rightNum = Math.round(random);
+  // random = Math.random() * 100;
+  // rightNum = Math.round(random);
+  window.location.reload(true);
   // $('#updated-guess').show();
   // $('#guessList').addClass('hidden').hide();
 })
@@ -50,7 +51,7 @@ function guess () {
 	if (abs > 50) {
     console.log("North pole..");
     $('#feedback').addClass('hidden').hide();
-     $('#updated-guess').removeClass('hidden').html("Cold").show();
+     $('#updated-guess').removeClass('hidden').html("Very Cold").show();
     // alert("You're colder than the North pole...");
     // alert('pengus');
      $('#guessList').append("<li>" + choice + "</li>");
@@ -59,7 +60,7 @@ function guess () {
     console.log("Snowed in..");
     // change all to better syntax // .removeClass()
      $('#feedback').addClass('hidden').hide();
-     $('#updated-guess').removeClass('hidden').html("Slightly Warmer").show()
+     $('#updated-guess').removeClass('hidden').html("Cold").show()
      // $('#updated-guess').html("Warmer");
       $('#guessList').append("<li>" + choice + "</li>");
 
@@ -69,7 +70,7 @@ function guess () {
     console.log("Snowed in..");
     // change all to better syntax // .removeClass()
       $('#feedback').addClass('hidden').hide();
-     $('#updated-guess').removeClass('hidden').html("Getting Closer").show();
+     $('#updated-guess').removeClass('hidden').html("Slightly Closer").show();
      // $('#updated-guess').html("Closer..");
     // alert("Getting Warmer"); 
      $('#guessList').append("<li>" + choice + "</li>");
@@ -78,7 +79,7 @@ function guess () {
     console.log("Snowed in..");
     // change all to better syntax // .removeClass()
       $('#feedback').addClass('hidden').hide();
-     $('#updated-guess').removeClass('hidden').html("Pretty Hot!").show();
+     $('#updated-guess').removeClass('hidden').html("Warmer").show();
      // $('#updated-guess').html("Getting hotter!");
     // alert("Getting Warmer"); 
      $('#guessList').append("<li>" + choice + "</li>");
